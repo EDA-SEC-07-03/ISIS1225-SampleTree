@@ -57,7 +57,7 @@ def loadData(analyzer, crimesfile):
     Carga los datos de los archivos CSV en el modelo
     """
     crimesfile = cf.data_dir + crimesfile
-    input_file = csv.DictReader(open(crimesfile, encoding="utf-8"),
+    input_file = csv.DictReader(open(crimesfile, encoding="windows-1252"),
                                 delimiter=",")
     for crime in input_file:
         model.addCrime(analyzer, crime)
