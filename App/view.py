@@ -83,7 +83,7 @@ while True:
         initialDate = input("Rango Inicial (YYYY-MM-DD): ")
         finalDate = input("Rango Final (YYYY-MM-DD): ")
         lst = controller.getCrimesByRange(cont, initialDate, finalDate)
-        print("\nTotal de llaves en el rango: " + str(lt.size(lst)))3
+        print("\nTotal de llaves en el rango: " + str(lt.size(lst)))
 
     elif int(inputs[0]) == 4:
         print("\nBuscando crimenes x grupo de ofensa en una fecha: ")
